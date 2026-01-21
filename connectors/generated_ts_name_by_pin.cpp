@@ -6,10 +6,51 @@
 // see comments at declaration in pin_repository.h
 const char * getBoardSpecificPinName(brain_pin_e brainPin) {
 	switch(brainPin) {
-		case Gpio::B14: return "B14 Output";
-		case Gpio::E2: return "VR/Hall 1 (E2)";
-		case Gpio::E3: return "VR/Hall 2 (E3)";
-		case Gpio::E4: return "VR/Hall 3 (E4)";
+		case Gpio::A15: return "FLEX (PA15)";
+		case Gpio::A8: return "CLT GAUGE (PA8)";
+		case Gpio::B12: return "D27 (SPI2 CS B12)";
+		case Gpio::B13: return "D29 (SPI2 SCK B13)";
+		case Gpio::B14: return "D25 (SPI2 MISO B14)";
+		case Gpio::B15: return "D23 (SPI2 MOSI B15)";
+		case Gpio::B3: return "D28 (PB3)";
+		case Gpio::B5: return "CLUTCH (PB5)";
+		case Gpio::B6: return "VSS (PB6)";
+		case Gpio::B7: return "CAM2 (PB7)";
+		case Gpio::B8: return "CKP (PB8)";
+		case Gpio::B9: return "CAM (PB9)";
+		case Gpio::C13: return "AC RELAY (PC13)";
+		case Gpio::C6: return "CHECK (PC6)";
+		case Gpio::C7: return "IDLE (PC7)";
+		case Gpio::C8: return "EVAP (PC8)";
+		case Gpio::C9: return "OUT48L (PC9)";
+		case Gpio::D0: return "CAN 1 RX (D0)";
+		case Gpio::D1: return "CAN 1 TX (D1)";
+		case Gpio::D10: return "D13 (PD10)";
+		case Gpio::D11: return "D12 (PD11)";
+		case Gpio::D12: return "INJ1 (PD12)";
+		case Gpio::D13: return "INJ2 (PD13)";
+		case Gpio::D14: return "INJ3 (PD14)";
+		case Gpio::D15: return "INJ4 (PD15)";
+		case Gpio::D3: return "IN42H (D3)";
+		case Gpio::D4: return "D26 (PD4)";
+		case Gpio::D5: return "TX3 (PD5)";
+		case Gpio::D6: return "RX3 (PD6)";
+		case Gpio::D7: return "D30 (PD7)";
+		case Gpio::D8: return "MAIN (PD8)";
+		case Gpio::D9: return "O2 HEATER (PD9)";
+		case Gpio::E0: return "PUMP (PE0)";
+		case Gpio::E1: return "PSP (PE1)";
+		case Gpio::E11: return "IGN2 (PE11)";
+		case Gpio::E13: return "IGN3  (PE13)";
+		case Gpio::E14: return "IGN4 (PE14)";
+		case Gpio::E15: return "IN22L (PE15)";
+		case Gpio::E2: return "ACPRESS (PE2)";
+		case Gpio::E3: return "FAN2 (PE3)";
+		case Gpio::E4: return "ACSW (PE4)";
+		case Gpio::E5: return "LED (PE5)";
+		case Gpio::E6: return "FAN (PE6)";
+		case Gpio::E7: return "TACHO (PE7)";
+		case Gpio::E9: return "IGN1 (PE9)";
 		default: return nullptr;
 	}
 	return nullptr;

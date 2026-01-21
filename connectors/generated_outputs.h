@@ -4,6 +4,72 @@
 #pragma once
 
 Gpio GENERATED_OUTPUTS = {
-	Gpio::B14, // B14 Output
-// "B14 Output",
+	Gpio::E9, // IGN1 (PE9)
+	Gpio::E11, // IGN2 (PE11)
+	Gpio::E13, // IGN3  (PE13)
+	Gpio::E14, // IGN4 (PE14)
+	Gpio::D12, // INJ1 (PD12)
+	Gpio::D13, // INJ2 (PD13)
+	Gpio::D14, // INJ3 (PD14)
+	Gpio::D15, // INJ4 (PD15)
+	Gpio::D0, // CAN 1 RX (D0)
+	Gpio::D1, // CAN 1 TX (D1)
+	Gpio::C9, // OUT48L (PC9)
+	Gpio::E0, // PUMP (PE0)
+	Gpio::E6, // FAN (PE6)
+	Gpio::E7, // TACHO (PE7)
+	Gpio::C13, // AC RELAY (PC13)
+	Gpio::E3, // FAN2 (PE3)
+	Gpio::C7, // IDLE (PC7)
+	Gpio::D9, // O2 HEATER (PD9)
+	Gpio::C6, // CHECK (PC6)
+	Gpio::E5, // LED (PE5)
+	Gpio::A8, // CLT GAUGE (PA8)
+	Gpio::C8, // EVAP (PC8)
+	Gpio::D8, // MAIN (PD8)
+	Gpio::D4, // D26 (PD4)
+	Gpio::B3, // D28 (PB3)
+	Gpio::D7, // D30 (PD7)
+	Gpio::D5, // TX3 (PD5)
+	Gpio::D6, // RX3 (PD6)
+	Gpio::D11, // D12 (PD11)
+	Gpio::D10, // D13 (PD10)
+	Gpio::B12, // D27 (SPI2 CS B12)
+	Gpio::B13, // D29 (SPI2 SCK B13)
+	Gpio::B14, // D25 (SPI2 MISO B14)
+	Gpio::B15, // D23 (SPI2 MOSI B15)
+// "IGN1 (PE9)",
+// "IGN2 (PE11)",
+// "IGN3  (PE13)",
+// "IGN4 (PE14)",
+// "INJ1 (PD12)",
+// "INJ2 (PD13)",
+// "INJ3 (PD14)",
+// "INJ4 (PD15)",
+// "CAN 1 RX (D0)",
+// "CAN 1 TX (D1)",
+// "OUT48L (PC9)",
+// "PUMP (PE0)",
+// "FAN (PE6)",
+// "TACHO (PE7)",
+// "AC RELAY (PC13)",
+// "FAN2 (PE3)",
+// "IDLE (PC7)",
+// "O2 HEATER (PD9)",
+// "CHECK (PC6)",
+// "LED (PE5)",
+// "CLT GAUGE (PA8)",
+// "EVAP (PC8)",
+// "MAIN (PD8)",
+// "D26 (PD4)",
+// "D28 (PB3)",
+// "D30 (PD7)",
+// "TX3 (PD5)",
+// "RX3 (PD6)",
+// "D12 (PD11)",
+// "D13 (PD10)",
+// "D27 (SPI2 CS B12)",
+// "D29 (SPI2 SCK B13)",
+// "D25 (SPI2 MISO B14)",
+// "D23 (SPI2 MOSI B15)",
 }
