@@ -122,7 +122,7 @@ static void customBoardDefaultConfiguration() {
 	engineConfiguration->mainRelayPin = Gpio::Unassigned;
 	engineConfiguration->acRelayPin = Gpio::C13;
 	engineConfiguration->fanPin = Gpio::E6;
-	engineConfiguration->fan2Pin = Gpio::D9;
+	engineConfiguration->fan2Pin = Gpio::E3;
 	engineConfiguration->fanOffTemperature = 96;
 	engineConfiguration->fanOnTemperature = 100;
 	engineConfiguration->fan2OnTemperature = 106;
