@@ -28,21 +28,21 @@ static void setIgnitionPins() {
 }
 
 static void setSensorPins() {
+	engineConfiguration->vbattAdcChannel = EFI_ADC_0;
+	engineConfiguration->map.sensor.hwChannel = EFI_ADC_1;
+	engineConfiguration->mafAdcChannel = EFI_ADC_2;
+    engineConfiguration->map.sensor.type = MT_MPX4250;
+	engineConfiguration->afr.hwChannel = EFI_ADC_4;
 	engineConfiguration->iat.adcChannel = EFI_ADC_10;
 	engineConfiguration->clt.adcChannel = EFI_ADC_11;	
 	engineConfiguration->tps1_1AdcChannel = EFI_ADC_12;
-	engineConfiguration->map.sensor.hwChannel = EFI_ADC_13;
-    engineConfiguration->map.sensor.type = MT_MPX4250;
-	engineConfiguration->vbattAdcChannel = EFI_ADC_0;
-	engineConfiguration->mafAdcChannel = EFI_ADC_2;
-	engineConfiguration->afr.hwChannel = EFI_ADC_4;
-	engineConfiguration->triggerInputPins[0] = Gpio::E0;
+	engineConfiguration->triggerInputPins[0] = Gpio::B8;
 	engineConfiguration->triggerInputPins[1] = Gpio::Unassigned;
-    engineConfiguration->camInputs[0] = Gpio::E1;
+    engineConfiguration->camInputs[0] = Gpio::B9;
 	engineConfiguration->camInputs[1] = Gpio::Unassigned;
-	engineConfiguration->vehicleSpeedSensorInputPin = Gpio::A5;
-	engineConfiguration->lps25BaroSensorScl = Gpio::B10;
-	engineConfiguration->lps25BaroSensorSda = Gpio::B11;
+	engineConfiguration->vehicleSpeedSensorInputPin = Gpio::B6;
+	//engineConfiguration->lps25BaroSensorScl = Gpio::B10;
+	//engineConfiguration->lps25BaroSensorSda = Gpio::B11;
 }
 
 static void setupVbatt() {
