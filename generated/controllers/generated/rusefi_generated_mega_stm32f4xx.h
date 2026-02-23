@@ -2143,7 +2143,7 @@
 #define ts_show_wastegate_sensor true
 #define ts_show_wbo_canbus_index true
 #define ts_show_wbo_canbus_set_index true
-#define TS_SIGNATURE "rusEFI main.2026.02.22.mega_stm32f4xx.4190636893"
+#define TS_SIGNATURE "rusEFI main.2026.02.23.mega_stm32f4xx.4190636893"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_TEST_COMMAND 't'
