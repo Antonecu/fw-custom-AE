@@ -46,11 +46,11 @@ static void setSensorPins() {
 }
 
 static void setupVbatt() {
-	// 470 high side/ 910 low side
-	engineConfiguration->analogInputDividerCoefficient = 1.51f;
+	// 5.6k high side/ 10k low side
+	engineConfiguration->analogInputDividerCoefficient = 1.56f;
 	
 	// 39k high side/ 1k low side
-	engineConfiguration->vbattDividerCoeff = 7.43f; 
+	engineConfiguration->vbattDividerCoeff = 7.64f; 
 	
 	engineConfiguration->adcVcc = 3.3f;
 }
