@@ -41,8 +41,8 @@ static void setSensorPins() {
     engineConfiguration->camInputs[0] = Gpio::B9;
 	engineConfiguration->camInputs[1] = Gpio::Unassigned;
 	engineConfiguration->vehicleSpeedSensorInputPin = Gpio::B6;
-	//engineConfiguration->lps25BaroSensorScl = Gpio::B10;
-	//engineConfiguration->lps25BaroSensorSda = Gpio::B11;
+	engineConfiguration->lps25BaroSensorScl = Gpio::B10;
+	engineConfiguration->lps25BaroSensorSda = Gpio::B11;
 }
 
 static void setupVbatt() {
@@ -164,11 +164,11 @@ static void customBoardDefaultConfiguration() {
 	engineConfiguration->max31855spiDevice = SPI_DEVICE_2;
 
 //SD card is located on SDIO interface
-	engineConfiguration->isSdCardEnabled = true;
+	//engineConfiguration->isSdCardEnabled = true;
 
 // Disable ETBs
-//	engineConfiguration->etbFunctions[0] = dc_function_e::DC_None;
-//	engineConfiguration->etbFunctions[1] = dc_function_e::DC_None;
+	engineConfiguration->etbFunctions[0] = dc_function_e::DC_None;
+	engineConfiguration->etbFunctions[1] = dc_function_e::DC_None;
 }
 
 void setup_custom_board_overrides() {
