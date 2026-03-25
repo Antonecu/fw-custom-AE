@@ -162,10 +162,9 @@ static void customBoardDefaultConfiguration() {
 	engineConfiguration->spi2sckPin = Gpio::B13;
 	engineConfiguration->max31855_cs[0] = Gpio::B12;
 	engineConfiguration->max31855spiDevice = SPI_DEVICE_2;
-
-//SD card is located on SPI3 interface
-	setSdCardSpi3();
-
+// SD
+	engineConfiguration->isSdCardEnabled = true;
+	
 // Disable ETBs
 	engineConfiguration->etbFunctions[0] = dc_function_e::DC_None;
 	engineConfiguration->etbFunctions[1] = dc_function_e::DC_None;
