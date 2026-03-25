@@ -164,11 +164,28 @@ static void customBoardDefaultConfiguration() {
 	engineConfiguration->max31855spiDevice = SPI_DEVICE_2;
 
 //SD card is located on SDIO interface
-	//engineConfiguration->isSdCardEnabled = true;
+	engineConfiguration->isSdCardEnabled = true;
 
 // Disable ETBs
 	engineConfiguration->etbFunctions[0] = dc_function_e::DC_None;
 	engineConfiguration->etbFunctions[1] = dc_function_e::DC_None;
+		// PWM pin
+	engineConfiguration->etbIo[0].controlPin = Gpio::Unassigned;
+	// DIR pin
+	engineConfiguration->etbIo[0].directionPin1 = Gpio::Unassigned;
+	// Disable pin
+	engineConfiguration->etbIo[0].disablePin = Gpio::Unassigned;
+
+	// Throttle #2
+	// PWM pin
+	engineConfiguration->etbIo[1].controlPin = Gpio::Unassigned;
+	// DIR pin
+	engineConfiguration->etbIo[1].directionPin1 = Gpio::Unassigned;
+	// Disable pin
+	engineConfiguration->etbIo[1].disablePin = Gpio::Unassigned;
+
+	// we only have pwm/dir, no dira/dirb
+	engineConfiguration->etb_use_two_wires = false;
 }
 
 void setup_custom_board_overrides() {
