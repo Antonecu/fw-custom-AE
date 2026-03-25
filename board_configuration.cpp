@@ -162,8 +162,10 @@ static void customBoardDefaultConfiguration() {
 	engineConfiguration->spi2sckPin = Gpio::B13;
 	engineConfiguration->max31855_cs[0] = Gpio::B12;
 	engineConfiguration->max31855spiDevice = SPI_DEVICE_2;
-// SD
+
+// SD spi3
 	engineConfiguration->isSdCardEnabled = true;
+	engineConfiguration->is_enabled_spi_3 = true;
 	
 // Disable ETBs
 	engineConfiguration->etbFunctions[0] = dc_function_e::DC_None;
