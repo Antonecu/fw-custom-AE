@@ -19,7 +19,7 @@ DDEFS += -DRAM_UNUSED_SIZE=100
 DDEFS += -DSTM32_ADC_USE_ADC3=TRUE
 # todo: make knock pin software-selectable?
 DDEFS += -DEFI_SOFTWARE_KNOCK=TRUE -DSTM32_ADC_USE_ADC3=TRUE
-DDEFS += -DKNOCK_SPECTROGRAM=TRUE
+DDEFS += -DKNOCK_SPECTROGRAM=FALSE
 
 # assign critical LED to a non-existent pin if you do not have it on your board
 # good old PD14 is still the default value
