@@ -28,16 +28,26 @@ DDEFS += -DLED_CRITICAL_ERROR_BRAIN_PIN=Gpio::I15
 //DDEFS += $(PRIMARY_COMMUNICATION_PORT_USART1)
 //PRIMARY_COMMUNICATION_PORT_USART1=-DEFI_CONSOLE_TX_BRAIN_PIN=Gpio::A10 -DEFI_CONSOLE_RX_BRAIN_PIN=Gpio::A9 -DTS_PRIMARY_UxART_PORT=UARTD1 -DSTM32_UART_USE_USART1=1
 
-DDEFS += $(PRIMARY_COMMUNICATION_PORT_USART1)
+# --- PUERTO PRIMARIO (USART1: A9 y A10) ---
 PRIMARY_COMMUNICATION_PORT_USART1 = -DTS_PRIMARY_UxART_PORT=UARTD1 \
                                     -DSTM32_UART_USE_USART1=TRUE \
-                                    -DEFI_UART_AF=7 \
+                                    -DEFI_CONSOLE_TX_BRAIN_PIN=Gpio::A9 \
+                                    -DEFI_CONSOLE_RX_BRAIN_PIN=Gpio::A10 \
                                     -DTS_PRIMARY_BAUDRATE=115200
 
-DDEFS += $(SECUNDARY_COMMUNICATION_PORT_USART2)
+# --- PUERTO SECUNDARIO (USART2: PD5 y PD6) ---
 SECONDARY_COMMUNICATION_PORT_USART2 = -DTS_SERIAL_PORT2=UARTD2 \
                                       -DSTM32_UART_USE_USART2=TRUE \
+                                      -DEFI_CONSOLE_TX_BRAIN_PIN_2=Gpio::D5 \
+                                      -DEFI_CONSOLE_RX_BRAIN_PIN_2=Gpio::D6 \
                                       -DTS_SERIAL_PORT2_BAUDRATE=115200
+
+# Agregar ambos a las definiciones globales
+DDEFS += $(PRIMARY_COMMUNICATION_PORT_USART1)
+DDEFS += $(SECONDARY_COMMUNICATION_PORT_USART2)
+
+# Flag de seguridad para evitar que la consola bloquee a TunerStudio
+DDEFS += -DTS_NO_LOGS=TRUE
 
 # we do not have much Lua RAM, let's drop some fancy functions
 DDEFS += -DWITH_LUA_CONSUMPTION=FALSE
