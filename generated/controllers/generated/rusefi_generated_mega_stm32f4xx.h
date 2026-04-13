@@ -1562,7 +1562,7 @@
 #define show_tcu_gauges false
 #define show_test_presets true
 #define show_vvt_output_pin true
-#define SIGNATURE_HASH 2880687868
+#define SIGNATURE_HASH 2655107859
 #define SIMULATOR_TUNE_BIN_FILE_NAME "generated/simulator_tune_image.bin"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_PREFIX "generated/simulator_tune_image"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_SUFFIX ".bin"
@@ -1965,6 +1965,7 @@
 #define ts_show_complexWallModel true
 #define ts_show_compression_ratio false
 #define ts_show_compressor_sensor true
+#define ts_show_console_pins true
 #define ts_show_console_settings true
 #define ts_show_cranking_rpm true
 #define ts_show_crankingTpsCurve true
@@ -1984,6 +1985,7 @@
 #define ts_show_cylinder_trim_2 true
 #define ts_show_dc_hardware true
 #define ts_show_debug_mode false
+#define ts_show_debug_modes false
 #define ts_show_disable_etb false
 #define ts_show_ecu_stimulator true
 #define ts_show_ego2 true
@@ -2144,7 +2146,7 @@
 #define ts_show_trigger_overrides true
 #define ts_show_trigger_pins true
 #define ts_show_tsp_pps_limits true
-#define ts_show_tunerstudio_port false
+#define ts_show_tunerstudio_port true
 #define ts_show_turbo_sensors true
 #define ts_show_twoWireBatchIgnition true
 #define ts_show_update_wbo_2023_to_2026 true
@@ -2172,7 +2174,7 @@
 #define ts_show_wbo_canbus_index true
 #define ts_show_wbo_canbus_set_index true
 #define ts_show_wbo_canbus_set_type false
-#define TS_SIGNATURE "rusEFI main.2026.04.12.mega_stm32f4xx.2880687868"
+#define TS_SIGNATURE "rusEFI main.2026.04.13.mega_stm32f4xx.2655107859"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_TEST_COMMAND 't'
