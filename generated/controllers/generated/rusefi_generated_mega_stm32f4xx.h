@@ -1563,7 +1563,7 @@
 #define show_tcu_gauges false
 #define show_test_presets true
 #define show_vvt_output_pin true
-#define SIGNATURE_HASH 2704557099
+#define SIGNATURE_HASH 1663142878
 #define SIMULATOR_TUNE_BIN_FILE_NAME "generated/simulator_tune_image.bin"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_PREFIX "generated/simulator_tune_image"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_SUFFIX ".bin"
@@ -1927,6 +1927,7 @@
 #define TS_SCATTER_OFFSETS_COUNT 128
 #define TS_SET_LOGGER_SWITCH 'l'
 #define TS_SET_LOGGER_SWITCH_char l
+#define ts_show_accelerometer false
 #define ts_show_acr_pins true
 #define ts_show_adv_wall_wetting true
 #define ts_show_AdvanceCorrectionsForCranking true
@@ -1957,7 +1958,7 @@
 #define ts_show_charge_estimation true
 #define ts_show_check_engine false
 #define ts_show_clt true
-#define ts_show_clt_iat_pullup true
+#define ts_show_clt_iat_pullup false
 #define ts_show_clutch_down true
 #define ts_show_clutch_down_pin true
 #define ts_show_clutch_up true
@@ -1966,7 +1967,7 @@
 #define ts_show_complexWallModel true
 #define ts_show_compression_ratio false
 #define ts_show_compressor_sensor true
-#define ts_show_console_pins true
+#define ts_show_console_pins false
 #define ts_show_console_settings true
 #define ts_show_cranking_rpm true
 #define ts_show_crankingTpsCurve true
@@ -2001,7 +2002,7 @@
 #define ts_show_etb_min_max true
 #define ts_show_etb_pid true
 #define ts_show_etb_pid_autotune true
-#define ts_show_etb_pins true
+#define ts_show_etb_pins false
 #define ts_show_exhaust_vvt true
 #define ts_show_experimental true
 #define ts_show_fan2_settings true
@@ -2063,7 +2064,7 @@
 #define ts_show_ignitionMode true
 #define ts_show_ignitionOutputs true
 #define ts_show_ignitionPinMode true
-#define ts_show_inj_diag true
+#define ts_show_inj_diag false
 #define ts_show_injection true
 #define ts_show_injection_hardware true
 #define ts_show_injection_mode true
@@ -2096,16 +2097,16 @@
 #define ts_show_oil_sensors true
 #define ts_show_oil_temp_sensor true
 #define ts_show_onboard_accelerometer false
-#define ts_show_output_diag true
+#define ts_show_output_diag false
 #define ts_show_popular_vehicles true
 #define ts_show_primary_trigger true
 #define ts_show_reboot_to_dfu true
 #define ts_show_reset_calibrations true
 #define ts_show_rotary true
 #define ts_show_sd_card true
-#define ts_show_sd_pins true
+#define ts_show_sd_pins false
 #define ts_show_second_bank true
-#define ts_show_sent true
+#define ts_show_sent false
 #define ts_show_software_knock true
 #define ts_show_sparkHardwareLatencyCorrection true
 #define ts_show_speedo_settings true
@@ -2147,7 +2148,7 @@
 #define ts_show_trigger_overrides true
 #define ts_show_trigger_pins true
 #define ts_show_tsp_pps_limits true
-#define ts_show_tunerstudio_port true
+#define ts_show_tunerstudio_port false
 #define ts_show_turbo_sensors true
 #define ts_show_twoWireBatchIgnition true
 #define ts_show_update_wbo_2023_to_2026 true
@@ -2175,7 +2176,7 @@
 #define ts_show_wbo_canbus_index true
 #define ts_show_wbo_canbus_set_index true
 #define ts_show_wbo_canbus_set_type false
-#define TS_SIGNATURE "rusEFI main.2026.04.14.mega_stm32f4xx.2704557099"
+#define TS_SIGNATURE "rusEFI main.2026.04.15.mega_stm32f4xx.1663142878"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_TEST_COMMAND 't'
