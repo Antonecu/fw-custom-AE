@@ -41,8 +41,8 @@ static void setSensorPins() {
     engineConfiguration->camInputs[0] = Gpio::B9;
 	engineConfiguration->camInputs[1] = Gpio::Unassigned;
 	engineConfiguration->vehicleSpeedSensorInputPin = Gpio::B6;
-	//engineConfiguration->lps25BaroSensorScl = Gpio::B10;
-	//engineConfiguration->lps25BaroSensorSda = Gpio::B11;
+	engineConfiguration->lps25BaroSensorScl = Gpio::B10;
+	engineConfiguration->lps25BaroSensorSda = Gpio::B11;
 }
 
 static void setupVbatt() {
@@ -62,8 +62,6 @@ static void customBoardDefaultConfiguration() {
 	setSensorPins();
 	setupVbatt();
 	
-	//engineConfiguration->clt.config.bias_resistor = 2490;
-	//engineConfiguration->iat.config.bias_resistor = 2490;
 	engineConfiguration->clt.config = {0, 50, 98, 94000, 11000, 2370, 2490};
 	engineConfiguration->iat.config = {0, 50, 98, 94000, 11000, 2370, 2490};
 
