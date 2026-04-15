@@ -41,8 +41,8 @@ static void setSensorPins() {
     engineConfiguration->camInputs[0] = Gpio::B9;
 	engineConfiguration->camInputs[1] = Gpio::Unassigned;
 	engineConfiguration->vehicleSpeedSensorInputPin = Gpio::B6;
-	engineConfiguration->lps25BaroSensorScl = Gpio::B10;
-	engineConfiguration->lps25BaroSensorSda = Gpio::B11;
+	//engineConfiguration->lps25BaroSensorScl = Gpio::B10;
+	//engineConfiguration->lps25BaroSensorSda = Gpio::B11;
 }
 
 static void setupVbatt() {
