@@ -11,7 +11,7 @@
 #define ts_show_fancy_hardware false
 #define ts_show_mc33810 false
 #define ts_show_can_pins false
-#define ts_show_tunerstudio_port false
+#define ts_show_tunerstudio_port true
 #define ts_show_sd_pins false
 #define ts_show_tcu false
 #define show_tcu_gauges false
