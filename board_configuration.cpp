@@ -41,8 +41,8 @@ static void setSensorPins() {
     engineConfiguration->camInputs[0] = Gpio::B9;
 	engineConfiguration->camInputs[1] = Gpio::Unassigned;
 	engineConfiguration->vehicleSpeedSensorInputPin = Gpio::B6;
-	engineConfiguration->lps25BaroSensorScl = Gpio::B10;
-	engineConfiguration->lps25BaroSensorSda = Gpio::B11;
+	//engineConfiguration->lps25BaroSensorScl = Gpio::B10;
+	//engineConfiguration->lps25BaroSensorSda = Gpio::B11;
 }
 
 static void setupVbatt() {
@@ -146,12 +146,12 @@ static void customBoardDefaultConfiguration() {
 	engineConfiguration->secondSolenoidPin = Gpio::Unassigned;
 	
 //CAN 1 bus overwrites
-	engineConfiguration->canRxPin = Gpio::D0;
-	engineConfiguration->canTxPin = Gpio::D1;
-	engineConfiguration->canWriteEnabled = true;
-	engineConfiguration->canReadEnabled = true;
-	engineConfiguration->canSleepPeriodMs = 50;
-	engineConfiguration->canBaudRate = B500KBPS;
+	//engineConfiguration->canRxPin = Gpio::D0;
+	//engineConfiguration->canTxPin = Gpio::D1;
+	//engineConfiguration->canWriteEnabled = true;
+	//engineConfiguration->canReadEnabled = true;
+	//engineConfiguration->canSleepPeriodMs = 50;
+	//engineConfiguration->canBaudRate = B500KBPS;
 
 //SPI2 for on-board EGT
 	//engineConfiguration->is_enabled_spi_2 = true;
@@ -162,13 +162,13 @@ static void customBoardDefaultConfiguration() {
 	//engineConfiguration->max31855spiDevice = SPI_DEVICE_2;
 
 // SD spi3
-	engineConfiguration->isSdCardEnabled = true;
-	engineConfiguration->is_enabled_spi_3 = true;
-	engineConfiguration->sdCardSpiDevice = SPI_DEVICE_3;
-	engineConfiguration->spi3mosiPin = Gpio::C12;
-	engineConfiguration->spi3misoPin = Gpio::C11;
-	engineConfiguration->spi3sckPin = Gpio::C10;	
-    engineConfiguration->sdCardCsPin = Gpio::D2;
+	//engineConfiguration->isSdCardEnabled = true;
+	//engineConfiguration->is_enabled_spi_3 = true;
+	//engineConfiguration->sdCardSpiDevice = SPI_DEVICE_3;
+	//engineConfiguration->spi3mosiPin = Gpio::C12;
+	//engineConfiguration->spi3misoPin = Gpio::C11;
+	//engineConfiguration->spi3sckPin = Gpio::C10;	
+    //engineConfiguration->sdCardCsPin = Gpio::D2;
 	
 // Disable ETBs
 	engineConfiguration->etbFunctions[0] = dc_function_e::DC_None;
