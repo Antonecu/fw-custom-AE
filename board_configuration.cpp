@@ -154,16 +154,21 @@ static void customBoardDefaultConfiguration() {
 	engineConfiguration->canBaudRate = B500KBPS;
 
 //SPI2 for on-board EGT
-	engineConfiguration->is_enabled_spi_2 = true;
+	//engineConfiguration->is_enabled_spi_2 = true;
 	// MOSI not needed, we have one-way communication here
-	engineConfiguration->spi2misoPin = Gpio::B14;
-	engineConfiguration->spi2sckPin = Gpio::B13;
-	engineConfiguration->max31855_cs[0] = Gpio::B12;
-	engineConfiguration->max31855spiDevice = SPI_DEVICE_2;
+	//engineConfiguration->spi2misoPin = Gpio::B14;
+	//engineConfiguration->spi2sckPin = Gpio::B13;
+	//engineConfiguration->max31855_cs[0] = Gpio::B12;
+	//engineConfiguration->max31855spiDevice = SPI_DEVICE_2;
 
 // SD spi3
 	engineConfiguration->isSdCardEnabled = true;
 	engineConfiguration->is_enabled_spi_3 = true;
+	engineConfiguration->sdCardSpiDevice = SPI_DEVICE_3;
+	engineConfiguration->spi3mosiPin = Gpio::C12;
+	engineConfiguration->spi3misoPin = Gpio::C11;
+	engineConfiguration->spi3sckPin = Gpio::C10;	
+    engineConfiguration->sdCardCsPin = Gpio::D2;
 	
 // Disable ETBs
 	engineConfiguration->etbFunctions[0] = dc_function_e::DC_None;
