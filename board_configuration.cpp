@@ -41,8 +41,8 @@ static void setSensorPins() {
     engineConfiguration->camInputs[0] = Gpio::B9;
 	engineConfiguration->camInputs[1] = Gpio::Unassigned;
 	engineConfiguration->vehicleSpeedSensorInputPin = Gpio::B6;
-	//engineConfiguration->lps25BaroSensorScl = Gpio::B10;
-	//engineConfiguration->lps25BaroSensorSda = Gpio::B11;
+	engineConfiguration->lps25BaroSensorScl = Gpio::B10;
+	engineConfiguration->lps25BaroSensorSda = Gpio::B11;
 }
 
 static void setupVbatt() {
@@ -81,7 +81,6 @@ static void customBoardDefaultConfiguration() {
 	engineConfiguration->cylinderBore = 79;
 	engineConfiguration->compressionRatio = 11.0;
 	engineConfiguration->injector.flow = 130;
-	//engineConfiguration->cranking.baseFuel = 25;
 	engineConfiguration->cranking.rpm = 400;
 	engineConfiguration->crankingTimingAngle = 20;
 	engineConfiguration->rpmHardLimit = 7500;
@@ -111,12 +110,11 @@ static void customBoardDefaultConfiguration() {
 	engineConfiguration->clutchDownPin = Gpio::B5;
 	engineConfiguration->clutchDownPinMode = PI_PULLDOWN;
 	engineConfiguration->launchActivationMode = CLUTCH_INPUT_LAUNCH;
-	//engineConfiguration->malfunctionIndicatorPin = Gpio::C6;
 	
 //Low Side Outputs 
 	engineConfiguration->fuelPumpPin = Gpio::E0;
 	engineConfiguration->tachOutputPin = Gpio::E7;
-	//engineConfiguration->mainRelayPin = Gpio::D8;
+	engineConfiguration->mainRelayPin = Gpio::D8;
 	engineConfiguration->mainRelayPin = Gpio::Unassigned;
 	engineConfiguration->acRelayPin = Gpio::C13;
 	engineConfiguration->fanPin = Gpio::E6;
@@ -146,29 +144,29 @@ static void customBoardDefaultConfiguration() {
 	engineConfiguration->secondSolenoidPin = Gpio::Unassigned;
 	
 //CAN 1 bus overwrites
-	//engineConfiguration->canRxPin = Gpio::D0;
-	//engineConfiguration->canTxPin = Gpio::D1;
-	//engineConfiguration->canWriteEnabled = true;
-	//engineConfiguration->canReadEnabled = true;
-	//engineConfiguration->canSleepPeriodMs = 50;
-	//engineConfiguration->canBaudRate = B500KBPS;
+	engineConfiguration->canRxPin = Gpio::D0;
+	engineConfiguration->canTxPin = Gpio::D1;
+	engineConfiguration->canWriteEnabled = true;
+	engineConfiguration->canReadEnabled = true;
+	engineConfiguration->canSleepPeriodMs = 50;
+	engineConfiguration->canBaudRate = B500KBPS;
 
 //SPI2 for on-board EGT
-	//engineConfiguration->is_enabled_spi_2 = true;
+	engineConfiguration->is_enabled_spi_2 = true;
 	// MOSI not needed, we have one-way communication here
-	//engineConfiguration->spi2misoPin = Gpio::B14;
-	//engineConfiguration->spi2sckPin = Gpio::B13;
-	//engineConfiguration->max31855_cs[0] = Gpio::B12;
-	//engineConfiguration->max31855spiDevice = SPI_DEVICE_2;
+	engineConfiguration->spi2misoPin = Gpio::B14;
+	engineConfiguration->spi2sckPin = Gpio::B13;
+	engineConfiguration->max31855_cs[0] = Gpio::B12;
+	engineConfiguration->max31855spiDevice = SPI_DEVICE_2;
 
 // SD spi3
-	//engineConfiguration->isSdCardEnabled = true;
-	//engineConfiguration->is_enabled_spi_3 = true;
-	//engineConfiguration->sdCardSpiDevice = SPI_DEVICE_3;
-	//engineConfiguration->spi3mosiPin = Gpio::C12;
-	//engineConfiguration->spi3misoPin = Gpio::C11;
-	//engineConfiguration->spi3sckPin = Gpio::C10;	
-    //engineConfiguration->sdCardCsPin = Gpio::D2;
+	engineConfiguration->isSdCardEnabled = true;
+	engineConfiguration->is_enabled_spi_3 = true;
+	engineConfiguration->sdCardSpiDevice = SPI_DEVICE_3;
+	engineConfiguration->spi3mosiPin = Gpio::C12;
+	engineConfiguration->spi3misoPin = Gpio::C11;
+	engineConfiguration->spi3sckPin = Gpio::C10;	
+    engineConfiguration->sdCardCsPin = Gpio::D2;
 	
 // Disable ETBs
 	engineConfiguration->etbFunctions[0] = dc_function_e::DC_None;
