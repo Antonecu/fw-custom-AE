@@ -1647,7 +1647,7 @@
 #define show_tcu_gauges false
 #define show_test_presets true
 #define show_vvt_output_pin true
-#define SIGNATURE_HASH 1281808808
+#define SIGNATURE_HASH 2984702797
 #define SIMULATOR_TUNE_BIN_FILE_NAME "generated/simulator_tune_image.bin"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_PREFIX "generated/simulator_tune_image"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_SUFFIX ".bin"
@@ -1676,6 +1676,7 @@
 #define stft_state_e_stftDisabledCrankingDelay 4
 #define stft_state_e_stftDisabledDFCO 7
 #define stft_state_e_stftDisabledFuelCut 9
+#define stft_state_e_stftDisabledLaunch 10
 #define stft_state_e_stftDisabledRPM 3
 #define stft_state_e_stftDisabledSettings 1
 #define stft_state_e_stftDisabledTpsAccel 8
@@ -2292,7 +2293,7 @@
 #define ts_show_wbo_canbus_index true
 #define ts_show_wbo_canbus_set_index true
 #define ts_show_wbo_canbus_set_type false
-#define TS_SIGNATURE "rusEFI main.2026.08.31.mega_stm32f4xx.1281808808"
+#define TS_SIGNATURE "rusEFI main.2026.09.01.mega_stm32f4xx.2984702797"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_TEST_COMMAND 't'
